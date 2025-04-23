@@ -10,7 +10,7 @@ I'm full of curiosity and motivation to grow as a developer 🌱. I'm just getti
 
 ---
 
-Feel free to connect or follow along as I keep learning and building! 😊
+## Feel free to connect or follow along as I keep learning and building! 😊
 <!--
 **caiocarvalho14/caiocarvalho14** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
