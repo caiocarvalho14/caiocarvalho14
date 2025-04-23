@@ -1,5 +1,5 @@
 # About me 🎲
-![GitHub stars](https://img.shields.io/github/stars/usuario/repositorio?style=social)
+![Steam](https://img.shields.io/github/stars/usuario/repositorio?style=social)
 <!--
 **caiocarvalho14/caiocarvalho14** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
