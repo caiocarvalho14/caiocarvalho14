@@ -1,27 +1,37 @@
-# About me 🎲
-Hey there! I'm **17 years old** and just starting out in the world of programming 🚀.  
-Currently, I'm taking a **technical course in Web Development at SENAI** 💻, where I'm learning how to build websites and applications from the ground up.
+# 👋 Olá, eu sou o Caio Carvalho!
+### Desenvolvedor Full-Stack | Estudante de Desenvolvimento Web no SENAI
 
-I'm **passionate about learning new programming languages** 🧠 and constantly looking to expand my knowledge in tech. I love challenging myself with something new every day — be it a concept, a tool, or a different way of thinking 🛠️.
+<br>
 
-📚 Outside of coding, I also really enjoy reading. I believe that books are a powerful way to explore ideas, spark creativity, and gain new perspectives.
+Sou um desenvolvedor apaixonado por transformar ideias em soluções web completas e eficientes. Com uma base sólida em desenvolvimento pelo SENAI, meu foco é resolver problemas reais através de código limpo, arquitetura bem planejada e aprendizado contínuo.
 
-I'm full of curiosity and motivation to grow as a developer 🌱. I'm just getting started, but I'm excited about the journey ahead!
+🌱 Atualmente, estou focado no desenvolvimento do **[EstágioS](URL_DO_REPOSITORIO_DO_PROJETO)**, uma plataforma de larga escala para o gerenciamento de estágios. É um projeto completo onde aplico e aprofundo meus conhecimentos em front-end, back-end e banco de dados.
 
 ---
 
-## Feel free to connect or follow along as I keep learning and building! 😊
-<!--
-**caiocarvalho14/caiocarvalho14** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🚀 Minhas Habilidades (Tech Stack)
 
-Here are some ideas to get you started:
+Abaixo estão algumas das tecnologias e ferramentas com as quais tenho trabalhado:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,express,mysql,postgresql,mongodb,git,docker,heroku,figma,uml&perline=7" />
+  </a>
+</p>
+
+---
+
+## 📊 Minhas Estatísticas no GitHub
+
+![Estatísticas do GitHub de Caio](https://github-readme-stats.vercel.app/api?username=SEU_USERNAME_DO_GITHUB&show_icons=true&theme=dracula&include_all_commits=true&count_private=true)
+<br>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SEU_USERNAME_DO_GITHUB&layout=compact&langs_count=7&theme=dracula)
+
+---
+
+## 📫 Conecte-se comigo
+
+<p align="left">
+<a href="URL_DO_SEU_LINKEDIN" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="caio-carvalho-linkedin" height="30" width="40" /></a>
+<a href="mailto:SEU_EMAIL@exemplo.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/gmail.svg" alt="caio-carvalho-email" height="30" width="40" /></a>
+</p>
