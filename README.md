@@ -24,8 +24,6 @@ Abaixo estão algumas das tecnologias e ferramentas com as quais tenho trabalhad
 ## 📊 Minhas Estatísticas no GitHub
 
 ![Estatísticas do GitHub de Caio](https://github-readme-stats.vercel.app/api?username=caiocarvalho14&show_icons=true&theme=dracula&include_all_commits=true&count_private=true)
-<br>
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=caiocarvalho14&layout=compact&langs_count=7&theme=dracula)
 
 ---
 
