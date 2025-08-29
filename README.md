@@ -31,5 +31,5 @@ Abaixo estão algumas das tecnologias e ferramentas com as quais tenho trabalhad
 
 <p align="left">
 <a href="https://www.linkedin.com/in/caio-carvalho-326269358/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="caio-carvalho-linkedin" height="30" width="40" /></a>
-<a href="mailto:caioscphb@gmail.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/email.svg" alt="caio-carvalho-email" height="30" width="40" /></a>
+<a href="mailto:caioscphb@gmail.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/mail.svg" alt="caio-carvalho-email" height="30" width="40" /></a>
 </p>
