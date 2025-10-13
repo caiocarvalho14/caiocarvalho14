@@ -15,7 +15,7 @@ Abaixo estão algumas das tecnologias e ferramentas com as quais tenho trabalhad
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap,tailwind,js,python,django,mysql,postgresql,vercel,git,figma,uml&perline=7" />
+    <img src="https://skillicons.dev/icons?i=html,css,react,vite,bootstrap,tailwind,js,python,django,mysql,postgresql,vercel,git,figma,uml&perline=7" />
   </a>
 </p>
 
