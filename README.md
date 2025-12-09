@@ -1,11 +1,9 @@
 # 👋 Olá, eu sou o [Caio Carvalho](https://caiocarvalho.dev.br)!
 ### Desenvolvedor Full-Stack | Automation Developer
 
-<br>
+Sou um desenvolvedor dedicado a transformar ideias em soluções web completas, funcionais e de alta qualidade. Meu foco é construir sistemas profissionais, aplicáveis e prontos para uso real, sustentados por código limpo, arquitetura bem planejada e evolução contínua.
 
-Sou um desenvolvedor apaixonado por transformar ideias em soluções web completas e eficientes. Com uma base sólida em desenvolvimento pelo SENAI, meu foco é resolver problemas reais através de código limpo, arquitetura bem planejada e aprendizado contínuo.
-
-🌱 Atualmente, estou focado no desenvolvimento do **[EstágioS]**, uma plataforma de larga escala para o gerenciamento de estágios. É um projeto completo onde aplico e aprofundo meus conhecimentos em front-end, back-end e banco de dados.
+Além do desenvolvimento web, trabalho com automações inteligentes utilizando n8n, integrando sistemas, otimizando fluxos e eliminando tarefas manuais para aumentar eficiência operacional. Meu objetivo é entregar soluções escaláveis, eficientes e alinhadas às necessidades reais do mercado, explorando continuamente tecnologias de front-end, back-end, banco de dados e automação.
 
 ---
 
