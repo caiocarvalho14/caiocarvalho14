@@ -1,5 +1,5 @@
 # 👋 Olá, eu sou o [Caio Carvalho](https://caiocarvalho.dev.br)!
-### Desenvolvedor Full-Stack | Estudante de Desenvolvimento Web no SENAI
+### Desenvolvedor Full-Stack | Automation Developer
 
 <br>
 
