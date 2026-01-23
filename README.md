@@ -1,5 +1,5 @@
 # 👋 Olá, eu sou o [Caio Carvalho](https://caiocarvalho.dev.br)!
-### Desenvolvedor Full-Stack | Automation Developer
+### Desenvolvedor Python | Automation Developer
 
 Sou um desenvolvedor dedicado a transformar ideias em soluções web completas, funcionais e de alta qualidade. Meu foco é construir sistemas profissionais, aplicáveis e prontos para uso real, sustentados por código limpo, arquitetura bem planejada e evolução contínua.
 
