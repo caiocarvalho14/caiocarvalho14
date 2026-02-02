@@ -11,11 +11,9 @@ Além do desenvolvimento web, trabalho com automações inteligentes utilizando 
 
 Abaixo estão algumas das tecnologias e ferramentas com as quais tenho trabalhado:
 
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,react,vite,bootstrap,tailwind,js,python,django,mysql,postgresql,vercel,git,figma,uml&perline=7" />
-  </a>
-</p>
+<!-- Automação e Integrações -->
+  <h3>⚙️ Automação e Integrações</h3>
+  <img src="https://skillicons.dev/icons?i=n8n,nodejs" />
 
 ---
 
