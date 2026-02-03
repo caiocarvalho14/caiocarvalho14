@@ -1,4 +1,4 @@
-# 👋 Olá, eu sou o [Caio Carvalho](https://caiocarvalho.dev.br)!
+# Olá, Sou o Caio 👨‍💻
 ### Desenvolvedor N8N & Python
 
 Sou um desenvolvedor dedicado a transformar ideias em soluções web completas, funcionais e de alta qualidade. Meu foco é construir sistemas profissionais, aplicáveis e prontos para uso real, sustentados por código limpo, arquitetura bem planejada e evolução contínua.
@@ -10,10 +10,13 @@ Além do desenvolvimento web, trabalho com automações inteligentes utilizando 
 ## 🚀 Minhas Habilidades (Tech Stack)
 
 Abaixo estão algumas das tecnologias e ferramentas com as quais tenho trabalhado:
-
-<!-- Automação e Integrações -->
-  <h3>⚙️ Automação e Integrações</h3>
-  <img src="https://skillicons.dev/icons?i=n8n,nodejs" />
+4483b4
+<p>
+  <img src="https://img.shields.io/badge/n8n-000000?style=for-the-badge&logo=n8n&logoColor=red" />
+  <img src="https://img.shields.io/badge/Python-4483b4?style=for-the-badge&logo=python&logoColor=yellow" />
+  <img src="https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/NodeJS-1e2427?style=for-the-badge&logo=nodedotjs&logoColor=green" />
+</p>
 
 ---
 
