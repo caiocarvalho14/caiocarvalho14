@@ -10,7 +10,6 @@ Atuo no desenvolvimento de automações avançadas com n8n, conectando sistemas,
 ## 🚀 Minhas Habilidades (Tech Stack)
 
 Abaixo estão algumas das tecnologias e ferramentas com as quais tenho trabalhado:
-4483b4
 <p>
   <img src="https://img.shields.io/badge/n8n-000000?style=for-the-badge&logo=n8n&logoColor=red" />
   <img src="https://img.shields.io/badge/Python-4483b4?style=for-the-badge&logo=python&logoColor=yellow" />
