@@ -11,10 +11,11 @@ Atuo no desenvolvimento de automações avançadas com n8n, conectando sistemas,
 
 Abaixo estão algumas das tecnologias e ferramentas com as quais tenho trabalhado:
 <p>
+   <img src="https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/n8n-000000?style=for-the-badge&logo=n8n&logoColor=red" />
   <img src="https://img.shields.io/badge/Python-4483b4?style=for-the-badge&logo=python&logoColor=yellow" />
   <img src="https://img.shields.io/badge/NodeJS-1e2427?style=for-the-badge&logo=nodedotjs&logoColor=green" />
-  <img src="https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-3178c6?style=for-the-badge&logo=postgresql&logoColor=white" />
 </p>
 
 ---
