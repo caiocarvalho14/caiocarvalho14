@@ -1,9 +1,9 @@
 # Bem Vindo! 👨‍💻
-### Caio Carvalho | Desenvolvedor n8n & Python
+### Caio Carvalho | Desenvolvedor de Software | BI & Dados
 
-Sou um desenvolvedor dedicado a transformar ideias em soluções digitais completas, funcionais e de alta qualidade, com foco principal na automação de processos utilizando agentes de IA, integrações inteligentes e desenvolvimento de APIs com Python.
+Sou um desenvolvedor dedicado a transformar ideias em soluções digitais completas, funcionais e de alta qualidade, com foco principal na automação de processos utilizando agentes de IA, integrações inteligentes e desenvolvimento de sistemas.
 
-Atuo no desenvolvimento de automações avançadas com n8n, conectando sistemas, serviços e APIs para otimizar fluxos de trabalho, reduzir tarefas manuais e aumentar a produtividade. Meu objetivo é construir soluções tecnológicas estratégicas e alinhadas às necessidades reais do mercado, explorando continuamente tecnologias de back-end, integrações, banco de dados, inteligência artificial e desenvolvimento web.
+Atuo no desenvolvimento de aplicações web e soluções orientadas a dados, atuando desde a modelagem e integração de bancos até a construção de interfaces e dashboards para análise e apoio à operação.
 
 ---
 
