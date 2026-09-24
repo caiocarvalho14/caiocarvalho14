@@ -1,17 +1,11 @@
-import React from 'react';
+
 import {
-  MapPin,
   Code2,
-  GraduationCap,
-  Gamepad2,
   Terminal,
   Database,
   Cpu,
   Target,
   BookOpen,
-  Dumbbell,
-  Music,
-  CheckCircle2
 } from 'lucide-react';
 
 export default function About() {

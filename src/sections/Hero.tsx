@@ -1,6 +1,6 @@
-import logo from '../assets/vite.svg';
 
-import { Code2, ArrowRight, Terminal, Mail } from 'lucide-react';
+
+import { ArrowRight, Terminal, Mail } from 'lucide-react';
 
 
 export default function Hero() {
