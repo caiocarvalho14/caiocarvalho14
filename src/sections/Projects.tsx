@@ -1,9 +1,7 @@
-import React from 'react';
 import {
   ExternalLink,
   FolderGit2,
   PieChart,
-  Bot,
   BookOpenCheck
 } from 'lucide-react';
 
