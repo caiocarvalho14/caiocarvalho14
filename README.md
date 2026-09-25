@@ -1,9 +1,7 @@
 # Bem Vindo! 👨‍💻
 ### Caio Carvalho | Desenvolvedor de Software | BI & Dados
 
-Sou um desenvolvedor dedicado a transformar ideias em soluções digitais completas, funcionais e de alta qualidade, com foco principal na automação de processos utilizando agentes de IA, integrações inteligentes e desenvolvimento de sistemas.
-
-Atuo no desenvolvimento de aplicações web e soluções orientadas a dados, atuando desde a modelagem e integração de bancos até a construção de interfaces e dashboards para análise e apoio à operação.
+Desenvolvedor de Software com experiência prática na criação de aplicações web, APIs, automações e soluções orientadas a dados. Atuação com React, TypeScript, Python, Django, SQL e PostgreSQL, desde a implementação de interfaces até integração com APIs e bancos de dados.
 
 ---
 
