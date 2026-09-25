@@ -2,7 +2,8 @@ import {
   ExternalLink,
   FolderGit2,
   PieChart,
-  BookOpenCheck
+  BookOpenCheck,
+  ExternalLinkIcon as Link
 } from 'lucide-react';
 
 export default function Projects() {
@@ -17,19 +18,19 @@ export default function Projects() {
       gradient: 'from-cyan-500/20 via-blue-500/10 to-transparent',
       iconColor: 'text-cyan-400',
       icon: <PieChart size={48} strokeWidth={1.5} />,
-      link:'https://github.com/caiocarvalho14/caiodev-toolbox'
     },
     {
       id: 2,
       title: 'EstágioS',
       description: 'Sistema web para gerenciamento de estudantes, empresas e estágios. Gestão de autenticação e gerenciamento de dados e API própria para uso com dispositivo físico.',
-      tech: ['Python', 'Django', 'Server Side Rendering'],
+      tech: ['Python', 'Django', 'Server Side Rendering', 'ESP32'],
       demoUrl: '#',
       githubUrl: '#',
       gradient: 'from-indigo-500/20 via-purple-500/10 to-transparent',
       iconColor: 'text-indigo-400',
       icon: <BookOpenCheck size={48} strokeWidth={1.5} />,
       code: false,
+      link: 'https://youtu.be/_d6sXUqCQ1c'
     },
     {
       id: 3,
@@ -106,19 +107,32 @@ export default function Projects() {
 
                 {/* Botões de Ação (Demo e Github) */}
                 <div className="flex items-center gap-4 mt-auto pt-4 border-t border-slate-800/80">
-                {
-                  
-                  project.code ?? (<>
-                    <a
-                      href={project.githubUrl}
-                      target='_blank'
-                      className="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors"
-                      aria-label={`Ver código fonte do ${project.title}`}
-                    >
-                      <i className="bi bi-github"></i>
-                      <span>Código</span>
-                    </a></>)
-                }
+                  {
+
+                    project.code ?? (<>
+                      <a
+                        href={project.githubUrl}
+                        target='_blank'
+                        className="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors"
+                        aria-label={`Ver código fonte do ${project.title}`}
+                      >
+                        <i className="bi bi-github"></i>
+                        <span>Código</span>
+                      </a></>)
+                  }
+                  {
+
+                    project.link ? (<>
+                      <a
+                        href={project.link}
+                        target='_blank'
+                        className="flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors"
+                        aria-label={`Ver código fonte do ${project.title}`}
+                      >
+                        <Link size={16}/>
+                        <span>Apresentação</span>
+                      </a></>) : ''
+                  }
                 </div>
               </div>
             </div>
