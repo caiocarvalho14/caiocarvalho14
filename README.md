@@ -1,24 +1,16 @@
 # Bem Vindo! 👨‍💻
 ### Caio Carvalho | Desenvolvedor de Software | BI & Dados
 
-Desenvolvedor de Software com experiência prática na criação de aplicações web, APIs, automações e soluções orientadas a dados. Atuação com React, TypeScript, Python, Django, SQL e PostgreSQL, desde a implementação de interfaces até integração com APIs e bancos de dados.
+Desenvolvedor de Soluções com experiência prática na criação de aplicações web, APIs, automações e soluções orientadas a dados. Atuação com React, TypeScript, Python, Django, SQL e PostgreSQL, desde a implementação de interfaces até integração com APIs e bancos de dados.
 
 ---
 
-## 🚀 Minhas Habilidades (Tech Stack)
-
-Abaixo estão algumas das tecnologias e ferramentas com as quais tenho trabalhado:
-<p>
-   <img src="https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/n8n-000000?style=for-the-badge&logo=n8n&logoColor=red" />
-  <img src="https://img.shields.io/badge/Python-4483b4?style=for-the-badge&logo=python&logoColor=yellow" />
-  <img src="https://img.shields.io/badge/NodeJS-1e2427?style=for-the-badge&logo=nodedotjs&logoColor=green" />
-  <img src="https://img.shields.io/badge/PostgreSQL-3178c6?style=for-the-badge&logo=postgresql&logoColor=white" />
-</p>
+## Minhas Habilidades
+[![Tecnologias](https://skillicons.dev/icons?i=typescript,react,python,django,postgresql,linux)](https://skillicons.dev)
 
 ---
 
-## 📫 Conecte-se comigo
+## Conecte-se comigo
 
 <p align="left">
-<a href="https://www.linkedin.com/in/caiocarvalho14/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="caio-carvalho-linkedin" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/caiocarvalho14/" target="blank"><img align="center" src="https://skillicons.dev/icons?i=linkedin" alt="caio-carvalho-linkedin" height="30" width="40" /></a>
