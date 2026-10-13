@@ -6,7 +6,7 @@ Desenvolvedor de Soluções com experiência prática na criação de aplicaçõ
 ---
 
 ## Minhas Habilidades
-[![Tecnologias](https://skillicons.dev/icons?i=typescript,react,python,django,postgresql,linux)](https://skillicons.dev)
+[![Tecnologias](https://skillicons.dev/icons?i=typescript,react,nextjs,python,django,postgresql,linux)](https://skillicons.dev)
 
 ---
 
