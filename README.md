@@ -8,7 +8,13 @@ Desenvolvedor de Soluções com experiência prática na criação de aplicaçõ
 ## Minhas Habilidades
 [![Tecnologias](https://skillicons.dev/icons?i=typescript,react,nextjs,python,django,postgresql,linux)](https://skillicons.dev)
 
----
+## Análise de dados e automação
+
+<div style="display: flex; align-items: center; gap: 12px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" height="28" />
+  <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" height="28" />
+</div>
+
 
 ## Conecte-se comigo
 
