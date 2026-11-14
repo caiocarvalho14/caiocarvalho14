@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Método não permitido' });
   }
 
-  const { name, email, message } = req.body;
+  const { name, email, service, message } = req.body;
 
   if (!name || !email || !message) {
     return res.status(400).json({ message: 'Preencha todos os campos.' });
@@ -17,10 +17,11 @@ export default async function handler(req, res) {
 
   // Monta a mensagem formatada que chegará no seu Telegram
   const text = `
-🚀 *Novo Contato do Portfolio!*
+🚀 *Novo contato — Caio Carvalho Dev*
     
 👤 *Nome:* ${name}
 📧 *Email:* ${email}
+🧩 *Projeto:* ${service || 'Não informado'}
     
 💬 *Mensagem:* 
 ${message}

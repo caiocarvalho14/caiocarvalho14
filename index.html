@@ -1,13 +1,120 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>caiocarvalho14</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="pt-BR" data-type="service" data-radius="soft" data-buttons="arrow" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caio Carvalho: sites e sistemas para lojas em Parnaíba</title>
+<meta name="description" content="Landing pages e sistemas sob medida para lojas e comércio local, feitos por um desenvolvedor de Parnaíba (PI). Landing page em 1 semana, com hospedagem e suporte inclusos.">
+<link rel="canonical" href="https://caiocarv.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://caiocarv.com/">
+<meta property="og:title" content="Caio Carvalho: sites e sistemas para lojas em Parnaíba">
+<meta property="og:description" content="Site para sua loja aparecer no Google e sistema para organizar pedidos e estoque. Atendimento direto com o desenvolvedor.">
+<meta property="og:image" content="https://caiocarv.com/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/system.css">
+<link rel="stylesheet" href="/assets/ui/cards.css">
+<link rel="stylesheet" href="/assets/motion/motion.css">
+<link rel="stylesheet" href="/assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="/assets/layout/layout.css">
+<link rel="stylesheet" href="/assets/icons/icon.css">
+<!-- cores do cliente (azul e branco) pelo start.mjs brand; fonte dada pelo sorteio: Figtree -->
+<style>
+:root {
+  --p-bg: #ffffff; --p-surface: #f1f4fa; --p-ink: #0c1631; --p-muted: #646e81;
+  --p-accent: #1a4be0; --p-accent-ink: #ffffff; --p-action: #1a4be0; --p-action-ink: #ffffff;
+  --p-inv-bg: #0c1631; --p-inv-surface: #19243e; --p-inv-ink: #ffffff; --p-inv-muted: #989eac;
+  --p-inv-accent: #ffffff; --p-inv-accent-ink: #0c1631; --p-inv-action: #ffffff; --p-inv-action-ink: #0c1631;
+  --font-display: "Figtree", system-ui, sans-serif;
+  --font-text: "Figtree", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.025em;
+  --display-tracking-xl: -0.035em;
+}
+</style>
+<link rel="stylesheet" href="/assets/diagrams/diagram.css">
+<link rel="stylesheet" href="/site.css">
+<script>
+/* Splash (src/components/Splash.tsx): só na primeira visita da sessão. Fica ~2s, depois a cortina sobe.
+   Clique ou tecla pulam. Ao começar a subir, dispara "splash:reveal" (as animações da abertura esperam por ele). */
+(function () {
+  var html = document.documentElement, seen = false
+  try { seen = sessionStorage.getItem('splash-seen') === '1' } catch (e) {}
+  if (seen) return
+  html.classList.add('has-splash')
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches
+  var done = false
+  function reveal() {
+    if (done) return
+    done = true
+    try { sessionStorage.setItem('splash-seen', '1') } catch (e) {}
+    html.classList.add('is-revealed')
+    window.dispatchEvent(new Event('splash:reveal'))
+    setTimeout(function () {
+      html.classList.remove('has-splash')
+      var s = document.querySelector('.splash')
+      if (s) s.remove()
+    }, reduce ? 300 : 1000)
+  }
+  window.__splashReveal = reveal
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(reveal, reduce ? 600 : 2200)
+    var s = document.querySelector('.splash')
+    if (s) s.addEventListener('click', reveal)
+    window.addEventListener('keydown', reveal, { once: true })
+  })
+  /* segurança: nunca deixa a página presa atrás do splash */
+  setTimeout(reveal, 5000)
+})()
+</script>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="/assets/backgrounds/backgrounds.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Caio Carvalho",
+  "description": "Landing pages e sistemas sob medida para lojas e comércio local.",
+  "url": "https://caiocarv.com/",
+  "sameAs": ["https://www.instagram.com/caiocarvalho.sites/"],
+  "image": "https://caiocarv.com/share.jpg",
+  "address": { "@type": "PostalAddress", "addressLocality": "Parnaíba", "addressRegion": "PI", "addressCountry": "BR" },
+  "areaServed": [{ "@type": "City", "name": "Parnaíba" }, { "@type": "Country", "name": "Brasil" }],
+  "founder": { "@type": "Person", "name": "Caio Carvalho", "jobTitle": "Desenvolvedor web" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Soluções",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landing page", "description": "Página da loja com produtos, endereço, horário e WhatsApp, pronta em 1 semana." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistema sob medida", "description": "Pedidos, estoque e clientes num lugar só, pronto em 2 a 3 semanas." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automação de processos", "description": "Tarefas repetidas feitas pelo próprio sistema." } }
+    ]
+  }
+}
+</script>
+</head>
+<!-- type: service
+     deal: hero split (re-dealt: photo needs a 1920px photograph with a calm side), nav nav-centre, close close-type,
+     footer footer-dark, rhythm dark-band (#projetos), buttons arrow, mark ring, grounds none
+     palette: the client's own blue and white (start.mjs brand), type figtree
+     animações: componentes do React Bits montados como ilhas (src/islands), a pedido do cliente -->
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+<script type="module" src="/assets/system.js"></script>
+<script type="module" src="/assets/motion/motion.js"></script>
+<script type="module" src="/assets/layout/layout.js"></script>
+<script type="module" src="/assets/diagrams/mount.js"></script>
+<script type="module" src="/site.js"></script>
+<!-- componentes animados do React Bits (src/islands); na build vira /build/*.js -->
+<script type="module" src="/src/islands/client.tsx"></script>
+</body>
 </html>

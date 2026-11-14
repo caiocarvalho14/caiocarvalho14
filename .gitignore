@@ -27,3 +27,8 @@ dist-ssr
 .env
 .env.*
 !.env.example
+
+# Taste Skill: perfis do Chrome e prints das checagens
+.taste-skill/chrome-*
+.taste-skill/shots*
+.taste-skill/*.txt

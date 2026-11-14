@@ -1,24 +1,33 @@
-// app.tsx
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
+import Hero from './sections/Hero'
+import Desafios from './sections/Desafios'
+import Solucoes from './sections/Solucoes'
+import Projetos from './sections/Projetos'
+import Contato from './sections/Contato'
+import ThreadsBand from './components/ThreadsBand'
+import Splash from './components/Splash'
+import { MAIN_ACTION } from './content'
 
-// components
-import NavBar from "./components/NavBar"
-
-// sections
-import Hero from "./sections/Hero"
-import About from "./sections/About"
-import Projects from "./sections/Projects"
-import Contact from "./sections/Contact"
-
+// A página é renderizada para HTML estático (scripts/prerender.mjs). Os comportamentos
+// (menu, animações, formulário) ficam nos scripts de public/assets e public/site.js.
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-50 font-sans selection:bg-cyan-500/30">
-      {/* Background Effect */}
-      <div className="fixed inset-0 z-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(6,182,212,0.15),rgba(255,255,255,0))] pointer-events-none"></div>
-      <NavBar/>
-      <Hero/>
-      <About/>
-      <Projects/>
-      <Contact/>
-    </div>
+    <>
+      <Splash />
+      <NavBar />
+      <main id="top">
+        <Hero />
+        <Desafios />
+        <ThreadsBand />
+        <Solucoes />
+        <Projetos />
+        <Contato />
+      </main>
+      <Footer />
+      <nav className="actionbar" aria-label="Ação rápida">
+        <a className="btn btn--primary" href="#contato">{MAIN_ACTION}</a>
+      </nav>
+    </>
   )
 }

@@ -1,0 +1,264 @@
+/* CSS da página: só o que fica dentro de um visual ou que o kit não tem. Cores, tipos e grid vêm de assets/system.css. */
+
+
+/* Soluções: lista de serviços e o diagrama ao lado */
+.rows .rows__name small { display: block; margin-top: var(--s-1); font-weight: 400; font-size: var(--t-body); line-height: 1.5; color: var(--muted); }
+.solucoes__note { margin: 0; max-width: 52ch; }
+.solucoes__visual { min-height: 560px; display: grid; place-items: center; padding: var(--s-6); background: var(--p-surface); border-color: transparent; border-radius: var(--r-lg); }
+.solucoes__visual .dg { width: 100%; }
+@media (max-width: 1023px) { .solucoes__visual { min-height: 0; height: 480px; margin-top: var(--s-7); } }
+@media (max-width: 639px) { .solucoes__visual { height: 520px; padding: var(--s-4); } }
+
+/* Projetos: o print de cada site, depois tipo, nome e descrição */
+.project { display: grid; align-content: start; }
+.project__shot { margin: var(--s-5) 0 0; aspect-ratio: 16 / 10; }
+.project__shot > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; border-radius: 16px; }
+.project__shot .tilted-card { margin: 0; }
+.project__shot .tilted-card__img { object-fit: cover; object-position: 50% 0; }
+.project__kind { margin: 0 0 var(--s-2); color: var(--muted); }
+.project .t-card { margin: 0; }
+.project__line { margin: var(--s-2) 0 0; max-width: 52ch; }
+@media (max-width: 1023px) { .project + .project { margin-top: var(--s-7); } }
+.testimonial { margin: var(--s-8) 0 0; }
+.testimonial video { width: 100%; max-height: 560px; border-radius: var(--r-lg); background: #000; }
+
+/* Contato: o passo a passo e o formulário */
+.steps-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-5); }
+.steps-list li:not([data-rb-mounted]), .steps-list li > div { display: grid; grid-template-columns: 32px 1fr; gap: var(--s-4); align-items: start; }
+.steps-list__num { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-size: var(--t-small); font-weight: 500; background: var(--accent); color: var(--accent-ink, #fff); }
+.steps-list strong { display: block; font-weight: 500; }
+.contact-form { align-self: start; }
+.contact-form textarea { min-height: 200px; }
+@media (max-width: 1023px) { .contact-form { margin-top: var(--s-7); } }
+@media (max-width: 639px) { .contact-form { grid-template-columns: minmax(0, 1fr); } .contact-form textarea { min-height: 240px; } }
+
+
+/* ===== Componentes do React Bits ===== */
+.rb-adopt { display: contents; }
+.rows > li.service-row[data-rb-mounted] { display: block; }
+.service-row > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--s-1) var(--s-5); }
+.rb-heading > [data-rb] { display: inline; }
+.rb-heading > [data-rb-mounted] { display: inline-flex; }
+
+/* Abertura centralizada: fundo de pontos, foto redonda com texto girando, título com palavra que troca */
+.hero--center { position: relative; overflow: hidden; text-align: center; }
+.hero--center > .wrap { height: 100%; }
+main > section.hero.hero--center > .wrap.hero__inner { gap: 0; row-gap: 0; }
+.hero__bg { position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  /* as linhas somem suavemente no topo e no pé da abertura */
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 78%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 78%, transparent 100%); }
+.hero__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: safe center; gap: 0; padding-bottom: 40px; }
+.hero__portrait { width: 196px; height: 196px; display: grid; place-items: center; margin: 0 auto var(--s-4); flex: none; }
+.hero__photo { width: 136px; height: 136px; border-radius: 50%; object-fit: cover; display: block;
+  box-shadow: 0 0 0 6px #fff, 0 0 0 7px rgba(26, 75, 224, 0.18), 0 24px 48px -16px rgba(12, 22, 49, 0.45); }
+.hero__portrait .circular-text { cursor: default; }
+.hero__pill { display: inline-flex; align-items: center; gap: var(--s-2); margin: 0 0 var(--s-4); padding: 6px 16px 6px 12px;
+  border: 1px solid rgba(26, 75, 224, 0.18); border-radius: 999px; background: rgba(255, 255, 255, 0.85); font-size: var(--t-small);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.hero__pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(26, 75, 224, 0.15); animation: hero-pulse 2.4s ease-in-out infinite; }
+@keyframes hero-pulse { 50% { box-shadow: 0 0 0 7px rgba(26, 75, 224, 0.05); } }
+.hero__title { margin: 0; font-size: clamp(38px, 5vw, 70px); line-height: 1.05; letter-spacing: -0.035em; font-weight: 400; max-width: 20ch; }
+.hero__line { display: block; }
+.hero__line--2 { display: flex; justify-content: center; align-items: baseline; flex-wrap: wrap; gap: 0 0.26em; }
+.hero__rotate { display: inline-flex; color: var(--accent); }
+.hero__rotate-word { color: var(--accent); overflow: hidden; padding-bottom: 0.08em; }
+.hero__rest { width: 100%; }
+.hero__lead { margin: var(--s-4) auto 0; max-width: 46ch; font-size: clamp(17px, 1.4vw, 20px); line-height: 1.55; color: var(--ink); }
+.hero__actions { justify-content: center; margin-top: var(--s-6); align-items: center; }
+.hero__marquee { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; padding: 14px 0; border-top: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.8); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); overflow: hidden; }
+.hero__marquee .scroller, .hero__marquee-text { font-family: var(--font-text); font-size: 15px !important; line-height: 1.5 !important; font-weight: 500; letter-spacing: 0.01em; color: var(--muted); filter: none; white-space: nowrap; }
+.hero__marquee-text { padding-right: 0.6em; }
+@media (max-width: 639px) {
+  .hero__portrait { transform: scale(0.66); margin: -34px auto -26px; }
+  .hero__pill { margin-bottom: var(--s-3); }
+  .hero__lead { font-size: 16px; }
+  .hero__insta { margin-top: var(--s-2); font-size: 14px; }
+  .hero__actions .btn { width: 100%; }
+  .hero__actions { margin-top: var(--s-5); }
+  /* no celular a palavra que troca fica numa linha só, sem empurrar o resto */
+  .hero__title { font-size: 34px; }
+  .hero__line--2 { flex-direction: column; align-items: center; }
+  .pain h3 { min-height: 0; }
+}
+
+/* Desafios: cards com luz que segue o mouse */
+.pain > div, .pain__card, .pain__card > .spotlight-card { height: 100%; }
+.pain__card > .spotlight-card, .pain__card:not([data-rb-mounted]) { position: relative; display: flex; flex-direction: column; min-height: 340px;
+  padding: var(--s-7) var(--s-6) var(--s-6); border-radius: 20px; background: #fff; border: 1px solid var(--line);
+  box-shadow: 0 1px 2px rgba(12, 22, 49, 0.04), 0 12px 32px -20px rgba(12, 22, 49, 0.25); }
+.pain__icons { display: flex; gap: var(--s-3); align-items: center; }
+.pain__card .rb-adopt + *, .pain__card h3 { margin-top: auto; }
+.pain__icons .ic { box-sizing: content-box; width: 36px; height: 36px; padding: 14px; border-radius: 16px; background: var(--p-surface); }
+.pain__num { position: absolute; top: 28px; right: 32px; font-size: 48px; line-height: 1; letter-spacing: -0.04em; color: rgba(26, 75, 224, 0.12); }
+.pain h3 { margin: var(--s-7) 0 var(--s-2); min-height: 2.6em; display: flex; align-items: flex-end; font-size: 21px; line-height: 1.3; font-weight: 500; }
+.pain p { margin: 0; color: var(--ink); }
+@media (max-width: 1023px) { .pain__card > .spotlight-card, .pain__card:not([data-rb-mounted]) { min-height: 0; } .pain h3 { margin-top: var(--s-5); } }
+
+/* Projetos: aurora azul atrás da faixa escura */
+.projetos { position: relative; overflow: hidden; }
+.projetos__aurora { position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.9; }
+.projetos > .wrap { position: relative; z-index: 1; }
+
+/* Rodapé: botão com faíscas e luz na borda */
+.close-spark { display: block; position: relative; }
+footer.closing { overflow-x: clip; }
+.close-star, .close-star > .star-border { display: block; width: 100%; }
+.close-star > .star-border { padding: 3px; }
+.close-star .btn { width: 100%; }
+#close-h .gradient-text { display: inline; }
+
+@media (prefers-reduced-motion: reduce) { .hero__pill .dot { animation: none; } }
+
+/* ===== Barra de navegação (React Bits: Card Nav) ===== */
+:root { --nav: 92px; }
+@media (max-width: 639px) { :root { --nav: 80px; } }
+.site-nav { position: fixed; top: 16px; left: 0; right: 0; z-index: 30; padding-inline: var(--gut); pointer-events: none; }
+.site-nav > * { pointer-events: auto; }
+.site-nav .skip-link { position: absolute; left: var(--gut); top: 0; }
+.site-nav__island { max-width: 1280px; margin: 0 auto; }
+.site-nav__logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-size: 19px; letter-spacing: -0.01em; color: var(--ink); white-space: nowrap; }
+/* o Card Nav define as cores inline; !important nas variáveis vence o inline */
+.site-nav .card-nav { --cn-panel: rgba(255, 255, 255, 0.8) !important; --cn-text: #0c1631 !important; --cn-muted: rgba(12, 22, 49, 0.6) !important;
+  --cn-cta: linear-gradient(180deg, #3366f2 0%, #1a4be0 100%) !important; --cn-cta-ink: #ffffff !important;
+  --cn-shadow: 0 24px 48px -24px rgba(12, 22, 49, 0.35), 0 6px 16px -10px rgba(12, 22, 49, 0.18) !important; }
+.site-nav .card-nav__logo { text-decoration: none; }
+/* versão estática (antes do JavaScript) */
+.site-nav__fallback { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 60px; padding: 0 8px 0 20px;
+  border-radius: 18px; background: rgba(255, 255, 255, 0.85); box-shadow: inset 0 0 0 1px rgba(12, 22, 49, 0.08), 0 10px 30px -18px rgba(12, 22, 49, 0.4);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.site-nav__links { display: flex; gap: var(--s-5); font-size: 15px; }
+.site-nav__links a, .site-nav__home { color: var(--ink); text-decoration: none; }
+.site-nav__cta { justify-self: end; display: inline-flex; align-items: center; height: 44px; padding: 0 18px; border-radius: 12px; background: var(--accent); color: #fff; font-weight: 500; font-size: 15px; text-decoration: none; }
+@media (max-width: 639px) { .site-nav__links { display: none; } .site-nav__fallback { grid-template-columns: auto 1fr; } .site-nav__home { justify-self: start; } }
+@media (max-width: 639px) { .site-nav__logo { font-size: 17px; } }
+
+/* Instagram na abertura e no rodapé */
+.hero__insta { display: inline-flex; align-items: center; gap: 8px; margin-top: var(--s-5); font-size: 15px; color: var(--muted); text-decoration: none; transition: color .2s; }
+.hero__insta strong { font-weight: 500; color: var(--ink); background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .3s; }
+.hero__insta:hover { color: var(--accent); }
+.hero__insta:hover strong { background-size: 100% 1px; color: var(--accent); }
+.footer__legal .socials a { display: inline-flex; align-items: center; gap: 8px; color: inherit; text-decoration: none; }
+
+/* ===== Projetos: print do computador + iPhone ao lado ===== */
+.project__devices { display: grid; grid-template-columns: minmax(0, 1fr) 28%; align-items: end; margin-top: var(--s-6); }
+.project__devices .project__shot { margin: 0; }
+.phone { position: relative; z-index: 2; margin-left: -14%; padding: 6px; border-radius: 32px;
+  background: linear-gradient(150deg, #5b616b 0%, #24282f 22%, #14171c 55%, #3a3f48 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14), 0 0 0 1px #07090c, 0 34px 60px -24px rgba(0, 0, 0, 0.75), 0 12px 24px -12px rgba(0, 0, 0, 0.5);
+  transform: translateY(22px); animation: phone-float 6s ease-in-out infinite; }
+.phone::before, .phone::after { content: ''; position: absolute; width: 3px; border-radius: 2px; background: linear-gradient(#4a4f58, #23272d); }
+.phone::before { right: -3px; top: 26%; height: 16%; }
+.phone::after { left: -3px; top: 20%; height: 9%; box-shadow: 0 calc(100% + 40px) 0 #2d3138; }
+.phone__screen { position: relative; overflow: hidden; border-radius: 26px; aspect-ratio: 634 / 1255; background: #000; }
+.phone__screen::after { content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 32%); }
+.phone__screen img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+@keyframes phone-float { 50% { transform: translateY(12px); } }
+.project__link { display: inline-flex; gap: 6px; margin-top: calc(var(--s-6) + 22px); color: #fff; }
+@media (max-width: 639px) {
+  .project__devices { grid-template-columns: minmax(0, 1fr) 32%; }
+  .phone { padding: 4px; border-radius: 22px; }
+  .phone__screen { border-radius: 18px; }
+}
+@media (prefers-reduced-motion: reduce) { .phone { animation: none; } }
+
+/* Contato: botão direto do WhatsApp e botão do formulário que aparece com tudo preenchido */
+.contact-direct { align-self: flex-start; }
+.contact-direct[hidden], .contact-submit[hidden] { display: none; }
+.contact-submit:not([hidden]) { animation: contact-in .45s cubic-bezier(.22, 1, .36, 1); }
+.contact-direct:not([hidden]) { animation: contact-in .35s ease-out; }
+@keyframes contact-in { from { opacity: 0; transform: translateY(8px) scale(.98); } }
+@media (max-width: 639px) { .contact-direct { width: 100%; justify-content: center; } }
+@media (prefers-reduced-motion: reduce) { .contact-submit:not([hidden]), .contact-direct:not([hidden]) { animation: none; } }
+
+/* Seções com a altura do próprio conteúdo (o kit fixa uma tela por seção, o que deixava vãos).
+   O espaço entre duas seções fica sempre o mesmo: o respiro de baixo de uma mais o de cima da próxima. */
+main > section.section { height: auto; min-height: 0; padding-bottom: var(--padb); }
+main > section.section > .wrap { height: auto; }
+
+/* Faixa de linhas entre Desafios e Soluções: ocupa o espaço entre as seções (margens negativas), atrás do conteúdo */
+.threads-band { position: relative; z-index: 0; height: 300px; margin: -110px 0 -130px; pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%); }
+.threads-band__lines { position: absolute; inset: 0; }
+main > section.section { z-index: 1; }
+@media (max-width: 639px) { .threads-band { height: 220px; margin: -70px 0 -90px; } }
+
+/* ===== Abertura: cartões flutuantes (Google, pedido no WhatsApp, painel, site no ar) ===== */
+.hero__cards { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.hcard { position: absolute; width: 232px; text-align: left;
+  /* parallax: --px/--py vêm do site.js (-1 a 1), --d é a profundidade de cada cartão */
+  transform: translate3d(calc(var(--px, 0) * var(--d) * 1px), calc(var(--py, 0) * var(--d) * 1px), 0);
+  transition: transform .8s cubic-bezier(.2, .8, .2, 1); }
+.hcard__float { padding: 12px 14px; border-radius: 16px; font-size: 13px; line-height: 1.35; color: var(--ink);
+  background: rgba(255, 255, 255, 0.8); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 0 1px rgba(12, 22, 49, 0.06), 0 18px 40px -22px rgba(12, 22, 49, 0.45), 0 4px 12px -8px rgba(12, 22, 49, 0.2);
+  opacity: 0; translate: 0 18px; scale: .96;
+  animation: hcard-in .9s cubic-bezier(.2, .8, .2, 1) forwards, hcard-float 7s ease-in-out infinite;
+  animation-delay: calc(1s + var(--i) * .18s), calc(var(--i) * -1.7s); }
+@keyframes hcard-in { to { opacity: 1; translate: 0 0; scale: 1; } }
+@keyframes hcard-float { 50% { transform: translateY(-9px); } }
+.hcard--google { left: max(32px, calc(50% - 640px)); top: 21%; }
+.hcard--whats { right: max(32px, calc(50% - 640px)); top: 25%; width: 252px; }
+.hcard--orders { left: max(56px, calc(50% - 610px)); bottom: 19%; width: 212px; }
+.hcard--live { right: max(72px, calc(50% - 590px)); bottom: 23%; width: auto; }
+.hcard__meta { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+.hcard__title { font-weight: 500; font-size: 14px; }
+.hcard__title--link { margin: 4px 0 3px; color: #1a4be0; }
+.hcard__stars { display: inline-flex; gap: 1px; }
+.hcard__open { color: #138a4a; }
+.hcard__chips { display: flex; gap: 6px; margin-top: 8px; }
+.hcard__chips span { padding: 3px 10px; border-radius: 999px; font-size: 12px; box-shadow: inset 0 0 0 1px rgba(12, 22, 49, 0.12); }
+.hcard__row { display: flex; align-items: center; gap: 10px; }
+.hcard__app { flex: none; }
+.hcard__time { margin-left: auto; align-self: flex-start; font-size: 11px; color: var(--muted); }
+.hcard__list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+.hcard__list li { display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; }
+.hcard__tag { padding: 1px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 500; }
+.hcard__tag--ok { background: #e3f5ea; color: #116b3a; }
+.hcard__tag--wait { background: #fff3d6; color: #8a5a00; }
+.hcard__tag--done { background: #e6edff; color: #1a4be0; }
+.hcard__check { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: #e3f5ea; color: #138a4a; flex: none; }
+/* só onde há espaço dos lados do título; em telas menores os cartões não aparecem */
+@media (max-width: 1239px) { .hero__cards { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .hcard { transition: none; transform: none; }
+  .hcard__float { animation: none; opacity: 1; translate: none; scale: none; }
+}
+
+/* ===== Splash: tela de abertura (src/components/Splash.tsx, controle no <head> do index.html) ===== */
+.splash { display: none; }
+html.has-splash { overflow: hidden; }
+html.has-splash .splash { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: #fff; color: var(--ink);
+  transition: transform .9s cubic-bezier(.76, 0, .24, 1); cursor: pointer; }
+html.is-revealed .splash { transform: translateY(-100%); }
+.splash__glow { position: absolute; width: 560px; height: 560px; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(26, 75, 224, 0.14), transparent);
+  opacity: 0; scale: .6; animation: splash-glow 1.4s cubic-bezier(.22, 1, .36, 1) forwards; }
+.splash__content { position: relative; display: flex; flex-direction: column; align-items: center; transition: opacity .35s, translate .35s; }
+html.is-revealed .splash__content { opacity: 0; translate: 0 -24px; }
+.splash__name { display: flex; margin: 0; overflow: hidden; padding-bottom: .08em; font-family: var(--font-display);
+  font-size: clamp(26px, 4.6vw, 44px); font-weight: 500; letter-spacing: .24em; }
+.splash__name span { display: inline-block; translate: 0 110%; white-space: pre;
+  animation: splash-rise .7s cubic-bezier(.22, 1, .36, 1) forwards; animation-delay: calc(.25s + var(--i) * .045s); }
+.splash__line { display: block; width: 168px; height: 1px; margin-top: 22px; transform-origin: center; scale: 0 1;
+  background: linear-gradient(90deg, transparent, #1a4be0, transparent);
+  animation: splash-line .9s cubic-bezier(.22, 1, .36, 1) .95s forwards; }
+.splash__role, .splash__insta { opacity: 0; translate: 0 6px; animation: splash-fade .6s cubic-bezier(.22, 1, .36, 1) forwards; }
+.splash__role { margin-top: 16px; font-size: 13px; letter-spacing: .32em; text-transform: uppercase; color: var(--muted); animation-delay: 1.15s; }
+.splash__insta { margin-top: 10px; font-size: 14px; font-weight: 500; letter-spacing: .02em; color: #1a4be0; animation-delay: 1.3s; }
+@keyframes splash-glow { to { opacity: 1; scale: 1; } }
+@keyframes splash-rise { to { translate: 0 0; } }
+@keyframes splash-line { to { scale: 1 1; } }
+@keyframes splash-fade { to { opacity: 1; translate: 0 0; } }
+@media (prefers-reduced-motion: reduce) {
+  html.has-splash .splash { transition: opacity .3s; }
+  html.is-revealed .splash { transform: none; opacity: 0; }
+  .splash__glow, .splash__name span, .splash__line, .splash__role, .splash__insta { animation: none; opacity: 1; translate: none; scale: none; }
+}
+/* enquanto o splash está na tela, a abertura espera: os cartões não começam e o texto animado não aparece pela metade */
+html.has-splash:not(.is-revealed) .hcard__float { animation-play-state: paused; }
+html.has-splash:not(.is-revealed) .hero [data-rb]:not([data-rb-mounted]) { visibility: hidden; }
+html.has-splash:not(.is-revealed) .site-nav [data-rb]:not([data-rb-mounted]) { visibility: hidden; }

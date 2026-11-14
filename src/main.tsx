@@ -1,11 +1,7 @@
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+// Só no `npm run dev`: gera o mesmo HTML estático da build e coloca no lugar do #root,
+// antes dos scripts do kit (módulos rodam em ordem), para que eles encontrem a página pronta.
+import { renderToStaticMarkup } from 'react-dom/server'
 import App from './App.tsx'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const root = document.getElementById('root')
+if (root) root.outerHTML = renderToStaticMarkup(<App />)
